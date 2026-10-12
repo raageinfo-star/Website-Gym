@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Training Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="db" viewBox="0 0 24 24">
+    <g transform="rotate(-45 12 12)">
+      <rect x="6.5" y="10.9" width="11" height="2.2"/>
+      <rect x="4.2" y="6.8" width="2.6" height="10.4" rx=".8"/>
+      <rect x="1.6" y="9" width="2" height="6" rx=".7"/>
+      <rect x="17.2" y="6.8" width="2.6" height="10.4" rx=".8"/>
+      <rect x="20.4" y="9" width="2" height="6" rx=".7"/>
+    </g>
+  </symbol>
+  <symbol id="wave" viewBox="0 0 34 14">
+    <g fill="none" stroke="#f0583c" stroke-width="1.6" stroke-linecap="round">
+      <path d="M1 3c4-4 5 4 8 0s5 4 8 0 5 4 8 0 5 4 8 0"/>
+      <path d="M1 7c4-4 5 4 8 0s5 4 8 0 5 4 8 0 5 4 8 0"/>
+      <path d="M1 11c4-4 5 4 8 0s5 4 8 0 5 4 8 0 5 4 8 0"/>
+    </g>
+  </symbol>
+  <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M2 22c0-6 4-9 10-9s10 3 10 9z"/></symbol>
+</svg>
+
+<header id="header">
+  <div class="nav">
+    <a href="#home" class="logo">Training <span>Studio</span></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="menu" id="menu">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#schedules">Schedules</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="signup">Sign Up</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <video class="hero-video" autoplay muted loop playsinline poster="images/hero.png">
+    <source src="https://www.pexels.com/download/video/37536689/" type="video/mp4">
+  </video>
+  <div class="inner">
+    <h6>Work harder, get stronger</h6>
+    <h1>Easy with our <span>gym</span></h1>
+    <a href="#contact" class="btn">Become a member</a>
+  </div>
+</section>
+
+<section class="programs" id="about">
+  <div class="container">
+    <div class="heading">
+      <h2>Choose <span>Program</span></h2>
+      <svg class="wave" width="34" height="14"><use href="#wave"/></svg>
+      <p>Pick the training plan that fits your goals. Our coaches will guide you from the first session to the final result.</p>
+    </div>
+    <div class="p-grid">
+      <div class="p-item"><div class="p-icon"><svg><use href="#db"/></svg></div><div><h4>Basic Fitness</h4><p>Start with simple routines that build strength and stamina. Read our <a href="#classes">beginner guide</a> before your first session.</p><a href="#classes" class="more">Discover more</a></div></div>
+      <div class="p-item"><div class="p-icon"><svg><use href="#db"/></svg></div><div><h4>Advanced Muscle Course</h4><p>Heavy compound lifts for members ready to push further. See the <a href="#schedules">weekly schedule</a> or meet our <a href="#trainers">coaches</a>.</p><a href="#classes" class="more">Discover more</a></div></div>
+      <div class="p-item"><div class="p-icon"><svg><use href="#db"/></svg></div><div><h4>New Gym Training</h4><p>New to the gym? Learn the machines and correct form. Questions? <a href="#contact">Contact us</a> any time.</p><a href="#classes" class="more">Discover more</a></div></div>
+      <div class="p-item"><div class="p-icon"><svg><use href="#db"/></svg></div><div><h4>Yoga Training</h4><p>Improve flexibility, balance and focus with guided flows suitable for every level.</p><a href="#classes" class="more">Discover more</a></div></div>
+      <div class="p-item"><div class="p-icon"><svg><use href="#db"/></svg></div><div><h4>Basic Muscle Course</h4><p>Build a solid base of muscle with a balanced split. Check the <a href="#classes">class list</a> for times and levels.</p><a href="#classes" class="more">Discover more</a></div></div>
+      <div class="p-item"><div class="p-icon"><svg><use href="#db"/></svg></div><div><h4>Body Building Course</h4><p>Sculpt your physique with high-volume training, posing tips and coach-led programming.</p><a href="#classes" class="more">Discover more</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="inner">
+    <h2>Don&rsquo;t <span>think</span>, begin <span>today</span>!</h2>
+    <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
+    <a href="#classes" class="btn">Become a member</a>
+  </div>
+</section>
+
+<section class="classes" id="classes">
+  <div class="container">
+    <div class="heading">
+      <h2>Our <span>Classes</span></h2>
+      <svg class="wave" width="34" height="14"><use href="#wave"/></svg>
+      <p>Choose the class that matches your goal and your level. Every session is led by a certified coach.</p>
+    </div>
+    <div class="c-wrap">
+      <div class="c-tabs" id="cTabs">
+        <button class="c-tab active" data-t="1"><svg><use href="#db"/></svg>First Training Class</button>
+        <button class="c-tab" data-t="2"><svg><use href="#db"/></svg>Second Training Class</button>
+        <button class="c-tab" data-t="3"><svg><use href="#db"/></svg>Third Training Class</button>
+        <button class="c-tab" data-t="4"><svg><use href="#db"/></svg>Fourth Training Class</button>
+        <a href="#schedules" class="c-all">View All Schedules</a>
+      </div>
+      <div>
+        <div class="c-panel active" id="cp1"><div class="c-pic" style="background-image:var(--img1)"></div><h3>First Training Class</h3><p>Build raw strength with barbell basics. You will learn safe lifting form, how to load the bar and how to track progress from week to week with a coach beside you.</p><a href="#schedules" class="btn">View Schedule</a></div>
+        <div class="c-panel" id="cp2"><div class="c-pic" style="background-image:var(--img2)"></div><h3>Second Training Class</h3><p>Fast-paced circuits that mix cardio and bodyweight work. Perfect for burning calories, improving stamina and keeping your workouts fresh and fun.</p><a href="#schedules" class="btn">View Schedule</a></div>
+        <div class="c-panel" id="cp3"><div class="c-pic" style="background-image:var(--img3)"></div><h3>Third Training Class</h3><p>Focus on mobility, core and balance. A calmer session that helps you recover, prevent injury and move better in every other class.</p><a href="#schedules" class="btn">View Schedule</a></div>
+        <div class="c-panel" id="cp4"><div class="c-pic" style="background-image:var(--img4)"></div><h3>Fourth Training Class</h3><p>Advanced muscle-building sessions with heavier loads and higher volume, designed for members who already have a solid training base.</p><a href="#schedules" class="btn">View Schedule</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="schedule" id="schedules">
+  <div class="inner">
+    <div class="heading">
+      <h2>Classes <span>Schedule</span></h2>
+      <svg class="wave" width="34" height="14"><use href="#wave"/></svg>
+      <p>Pick a day to see which classes are running, what time they start and who is coaching.</p>
+    </div>
+    <div class="days" id="days">
+      <button class="day active" data-d="mon">Monday</button><i>/</i>
+      <button class="day" data-d="tue">Tuesday</button><i>/</i>
+      <button class="day" data-d="wed">Wednesday</button><i>/</i>
+      <button class="day" data-d="thu">Thursday</button><i>/</i>
+      <button class="day" data-d="fri">Friday</button>
+    </div>
+    <div class="table-wrap">
+      <table id="mon" class="active">
+        <tr><td>Fitness Class</td><td>10:00AM - 11:30AM</td><td></td><td>Ahmed A. Warsame</td></tr>
+        <tr><td>Muscle Training</td><td></td><td></td><td>Khalid M. Nur</td></tr>
+        <tr><td>Body Building</td><td></td><td>2:00PM - 3:30PM</td><td>Omar H. Ali</td></tr>
+        <tr><td>Yoga Training Class</td><td></td><td></td><td>Hodan S. Abdi</td></tr>
+        <tr><td>Advanced Training</td><td></td><td></td><td>Sara I. Farah</td></tr>
+      </table>
+      <table id="tue">
+        <tr><td>Fitness Class</td><td></td><td>4:00PM - 5:30PM</td><td>Ahmed A. Warsame</td></tr>
+        <tr><td>Muscle Training</td><td>9:00AM - 10:30AM</td><td></td><td>Khalid M. Nur</td></tr>
+        <tr><td>Body Building</td><td></td><td></td><td>Omar H. Ali</td></tr>
+        <tr><td>Yoga Training Class</td><td>11:00AM - 12:00PM</td><td></td><td>Hodan S. Abdi</td></tr>
+        <tr><td>Advanced Training</td><td></td><td></td><td>Sara I. Farah</td></tr>
+      </table>
+      <table id="wed">
+        <tr><td>Fitness Class</td><td>8:00AM - 9:30AM</td><td></td><td>Ahmed A. Warsame</td></tr>
+        <tr><td>Muscle Training</td><td></td><td>1:00PM - 2:30PM</td><td>Khalid M. Nur</td></tr>
+        <tr><td>Body Building</td><td>5:00PM - 6:30PM</td><td></td><td>Omar H. Ali</td></tr>
+        <tr><td>Yoga Training Class</td><td></td><td></td><td>Hodan S. Abdi</td></tr>
+        <tr><td>Advanced Training</td><td></td><td>7:00PM - 8:30PM</td><td>Sara I. Farah</td></tr>
+      </table>
+      <table id="thu">
+        <tr><td>Fitness Class</td><td></td><td></td><td>Ahmed A. Warsame</td></tr>
+        <tr><td>Muscle Training</td><td>10:00AM - 11:30AM</td><td></td><td>Khalid M. Nur</td></tr>
+        <tr><td>Body Building</td><td></td><td>3:00PM - 4:30PM</td><td>Omar H. Ali</td></tr>
+        <tr><td>Yoga Training Class</td><td>6:00PM - 7:00PM</td><td></td><td>Hodan S. Abdi</td></tr>
+        <tr><td>Advanced Training</td><td></td><td></td><td>Sara I. Farah</td></tr>
+      </table>
+      <table id="fri">
+        <tr><td>Fitness Class</td><td>7:00AM - 8:30AM</td><td>5:00PM - 6:30PM</td><td>Ahmed A. Warsame</td></tr>
+        <tr><td>Muscle Training</td><td></td><td></td><td>Khalid M. Nur</td></tr>
+        <tr><td>Body Building</td><td></td><td></td><td>Omar H. Ali</td></tr>
+        <tr><td>Yoga Training Class</td><td>9:00AM - 10:00AM</td><td></td><td>Hodan S. Abdi</td></tr>
+        <tr><td>Advanced Training</td><td></td><td>4:00PM - 5:30PM</td><td>Sara I. Farah</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="trainers" id="trainers">
+  <div class="container">
+    <div class="heading">
+      <h2>Expert <span>Trainers</span></h2>
+      <svg class="wave" width="30" height="12"><use href="#wave"/></svg>
+      <p>Meet the coaches who will guide, push and support you through every single workout.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="photo" style="background-image:var(--t1)"></div><span class="role">Strength Trainer</span><h4>Ahmed A. Warsame</h4><p>Specialist in barbell strength and technique. Helps beginners lift safely and advanced members break plateaus.</p><div class="social"><a href="#">f</a><a href="#">t</a><a href="#">in</a><a href="#">Be</a></div></div>
+      <div class="card"><div class="photo" style="background-image:var(--t2)"></div><span class="role">Muscle Trainer</span><h4>Khalid M. Nur</h4><p>Focused on hypertrophy programming and nutrition habits that help members build lean, lasting muscle.</p><div class="social"><a href="#">f</a><a href="#">t</a><a href="#">in</a><a href="#">Be</a></div></div>
+      <div class="card"><div class="photo" style="background-image:var(--t3)"></div><span class="role">Power Trainer</span><h4>Omar H. Ali</h4><p>Builds explosive power with functional circuits, kettlebells and conditioning for everyday athletes.</p><div class="social"><a href="#">f</a><a href="#">t</a><a href="#">in</a><a href="#">Be</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="contact">
+  <div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255180.66741758975!2d45.407579049999995!3d2.0766723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58425955ce6b53%3A0xbb20eaaa52cc59d9!2sMogadishu!5e0!3m2!1sen!2sso!4v1791808042206!5m2!1sen!2sso" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>  </div>
+  <div class="contact">
+    <div class="form-box">
+      <form id="form">
+        <div class="row">
+          <input type="text" id="name" placeholder="Your Name*" required>
+          <input type="email" id="email" placeholder="Your Email*" required>
+        </div>
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <div class="status" id="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Copyright &copy; <span id="year">2026</span> Training Studio - Designed by <a href="#">Libaan</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
